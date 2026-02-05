@@ -75,3 +75,31 @@ print(farm.name)
 
 for animal in farm.listed_animals():
     print(animal)
+
+
+#Example 3
+
+class School:
+    def __init__(self, name):
+        self.name = name
+        self.students = []
+    
+    def add_student(self, student):
+        self.students.append(student)
+
+    def student_list(self):
+        return [f"{student.name} scored {student.grade}" for student in self.students]
+
+
+class Student:
+    def __init__(self, name, grade):
+        self.name = name
+        self.grade = grade 
+        
+
+school = School("The University of Titans, CA County")
+
+stud1 = Student("Caden", 98)
+stud2 = Student("Frank", 90)
+stud3 = Student("Ashley", 92)
+stud4 = Student("Rosey", 93)
