@@ -38,3 +38,40 @@ print(library.name)
 
 for book in library.list_books():
     print(book)
+
+
+
+#Example 2
+
+class Farm:
+    def __init__(self, name):
+        self.name = name
+        self.animals = []
+        
+    def add_animal(self, animal):
+        self.animals.append(animal)
+
+    def listed_animals(self):
+        return [f"{animal.cow} and {animal.goat}" for animal in self.animals]
+
+
+class Animal:
+    def __init__(self, cow, goat):
+        self.cow = cow
+        self.goat = goat
+
+
+farm = Farm("The Great Breeder Ranch")
+
+batch1 = Animal("cowsy1", "goatmatata1")
+batch2 = Animal("cowseycow", "goatie")
+batch3 = Animal("cowwow", "goatedbull")
+
+farm.add_animal(batch1)
+farm.add_animal(batch2)
+farm.add_animal(batch3)
+
+print(farm.name)
+
+for animal in farm.listed_animals():
+    print(animal)
