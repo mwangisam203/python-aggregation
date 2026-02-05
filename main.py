@@ -103,3 +103,14 @@ stud1 = Student("Caden", 98)
 stud2 = Student("Frank", 90)
 stud3 = Student("Ashley", 92)
 stud4 = Student("Rosey", 93)
+
+school.add_student(stud1)
+school.add_student(stud2)
+school.add_student(stud3)
+school.add_student(stud4)
+
+
+print(school.name)
+
+for student in school.student_list():
+    print(student)
