@@ -29,6 +29,9 @@ for name, amount in orders:
     totals[name] += amount
 # {'alice': 70, 'bob': 30}
 
+
+
+## defaultdict(list) — grouping into lists
 from collections import defaultdict
 
 people = [("eng", "sam"), ("sales", "amy"), ("eng", "joe")]
