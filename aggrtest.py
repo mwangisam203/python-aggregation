@@ -39,3 +39,9 @@ by_dept = defaultdict(list)
 for dept, name in people:
     by_dept[dept].append(name)
 # {'eng': ['sam', 'joe'], 'sales': ['amy']}
+
+
+#dict comprehension aggregation
+prices = {"apple": 1.0, "banana": 0.5, "cherry": 3.0}
+expensive = {k: v for k, v in prices.items() if v > 0.5}
+# {'apple': 1.0, 'cherry': 3.0}
