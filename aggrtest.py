@@ -28,3 +28,11 @@ totals = defaultdict(int)
 for name, amount in orders:
     totals[name] += amount
 # {'alice': 70, 'bob': 30}
+
+from collections import defaultdict
+
+people = [("eng", "sam"), ("sales", "amy"), ("eng", "joe")]
+by_dept = defaultdict(list)
+for dept, name in people:
+    by_dept[dept].append(name)
+# {'eng': ['sam', 'joe'], 'sales': ['amy']}
