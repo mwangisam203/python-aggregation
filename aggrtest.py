@@ -47,6 +47,7 @@ expensive = {k: v for k, v in prices.items() if v > 0.5}
 # {'apple': 1.0, 'cherry': 3.0}
 
 
+## itertools.groupby — grouping a sorted sequence
 
 from itertools import groupby
 
