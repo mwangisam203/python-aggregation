@@ -17,3 +17,14 @@ from collections import Counter
 words = ["apple", "banana", "apple", "orange", "apple"]
 counts = Counter(words)  # Counter({'apple': 3, 'banana': 1, 'orange': 1})
 counts.most_common(2)    # [('apple', 3), ('banana', 1)]
+
+
+
+
+from collections import defaultdict
+
+orders = [("alice", 50), ("bob", 30), ("alice", 20)]
+totals = defaultdict(int)
+for name, amount in orders:
+    totals[name] += amount
+# {'alice': 70, 'bob': 30}
