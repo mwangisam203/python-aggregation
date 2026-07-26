@@ -19,7 +19,7 @@ counts = Counter(words)  # Counter({'apple': 3, 'banana': 1, 'orange': 1})
 counts.most_common(2)    # [('apple', 3), ('banana', 1)]
 
 
-
+# collections.defaultdict — grouping into buckets
 
 from collections import defaultdict
 
