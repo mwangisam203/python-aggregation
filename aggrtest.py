@@ -45,3 +45,13 @@ for dept, name in people:
 prices = {"apple": 1.0, "banana": 0.5, "cherry": 3.0}
 expensive = {k: v for k, v in prices.items() if v > 0.5}
 # {'apple': 1.0, 'cherry': 3.0}
+
+
+
+from itertools import groupby
+
+orders = [("alice", 50), ("alice", 20), ("bob", 30)]
+for key, group in groupby(orders, key=lambda x: x[0]):
+    print(key, sum(amount for _, amount in group))
+# alice 70
+# bob 30
